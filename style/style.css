@@ -6,20 +6,29 @@
     margin: 0;
 }
 
-nav {
-    background-color: blue;
-    width: 100%;
-}
-
-nav>ul {
-    height: 100%;
+.nav-bar {
     width: 100%;
     display: flex;
+    justify-items: center;
 }
 
-nav li {
-    height: 100%;
-    margin: 10px;
+.nav-bar>ul {
+    display: flex;
+}
+  
+.nav-bar li {
+    padding:5px;
+}
+
+.nav-bar .nav-bar_li_active {
+    background: white;
+}
+
+.nav-bar a {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 10px;
 }
 
 footer {
