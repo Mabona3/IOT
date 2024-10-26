@@ -5,21 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Style Sheets-->
         <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/bootstrap.min.css">
         <link rel="stylesheet" href="./style/style.css">
         <!-- Page Title -->
         <title>Liquid Monitoring</title>
     </head>
     <body>
-        <nav class="nav-bar">
-            <ul nav-bar-ul>
-                <li class="nav-bar_li_active"><a href="#">Home<a></li>
+        <nav class="bg-dark nav-bar">
+            <ul class="nav-bar_ul">
+                <li class="bg-secondary color-white nav-bar_li_active"><a href="#">Home<a></li>
                 <li><a href="./IOT.html">IOT<a></li>
                 <li><a href="./about.html">About<a></li>
             </ul>
         </nav>
-        <div class="Container">
-            <!-- Header Section -->
-            <header>
+        <!-- Header Section -->
+        <header class="bg-primary text-white">
+            <div class="container-md">
                 <h1 class="header_h1">Liquid Level Monitoring System</h1>
                 <p class="header_intro">
                 A liquid level monitoring system is an IoT-based project that allows
@@ -33,8 +34,10 @@
                 Users can then access the data from a web browser or
                 mobile app and receive real-time updates on the liquid level.
                 </p>
-                <img src="image.png" alt="image">
-            </header>
+                <img src="./images/image.png" alt="image">
+            </div>
+        </header>
+        <div class="container-md">
             <section>
                 <h3>Objectives</h3>
                 <p>The benefits of a liquid-level monitoring system include

@@ -1,6 +1,19 @@
 * {
     box-sizing: border-box;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -20,8 +33,17 @@
     padding:5px;
 }
 
+.nav-bar li a {
+    text-decoration: none;
+    color:white
+}
+
 .nav-bar .nav-bar_li_active {
-    background: white;
+    background: grey;
+}
+
+.nav-bar .nav-bar_li_active a{
+    color: black
 }
 
 .nav-bar a {
@@ -37,3 +59,7 @@ footer {
     justify-content: space-between;
 }
 
+.container {
+    width: 500px;
+    margin: auto 0;
+}
