@@ -1,6 +1,6 @@
 # LIQUID LEVEL MONITORING SYSTEM
 A Liquid Level Monitoring System tracks and manages liquid levels in tanks using sensors, ensuring optimal levels and preventing overflow or shortages.
-![liquid-level-monitoring-image](Liquid-level-monitoring.png)
+![liquid-level-monitoring-image](images/Liquid-level-monitoring.png)
 
 ## Table of contents
 [introduction](#introduction)
