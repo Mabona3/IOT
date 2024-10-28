@@ -1,4 +1,19 @@
+:root {
+    --section-padding: 75px;
+    --secondary-color: #131516
+}
+
 header {
-    padding: 10px;
+    padding-top: var(--section-padding);
+}
+
+header {
+    padding-bottom: var(--section-padding);
     margin-bottom: 50px;
 }
+
+.section {
+    margin-bottom: 50px;
+    color: white;
+}
+
