@@ -24,9 +24,11 @@ a:hover {
 
 footer {
     border-top: 1px solid black;
+}
+
+.footer {
     padding-top: 10px;
     display: flex;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -42,5 +44,3 @@ footer {
         display: none;
     } 
 }
-
-
