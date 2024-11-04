@@ -8,6 +8,8 @@ body {
 }
 h1 {
     color: #2c3e50;
+    text-decoration: none;
+    font-weight: 700;
 }
 p {
     color: black;
@@ -27,7 +29,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #601cfc;
     text-decoration: none;
 }
 
