@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./style/IOT.css">
         <link rel="stylesheet" href="./style/style.css">
         <title>Liquid Monitoring Program</title>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
         <!-- NavBar Section -->
@@ -26,7 +27,15 @@
                     </ul>
                 </div>
         </nav>
-        <div class="Container" style="height: 60vh;">
+        <div class="Container" style="min-height: 60vh;">
+          <div id="auth">
+            <div id="div_control_iot">
+              <button id="button_control_iot">Control IOT Device</button>
+            </div>
+            <div><p id="Hint"></p></div>
+            <div id="Authenticated">
+            </div>
+          </div>
         </div>
         <hr>
         <footer>
@@ -42,14 +51,14 @@
                     <h4>Contact Us</h4>
                     <ul>
                         <li><a href="https://www.facebook.com">Facebook</a></li>
-                        <li><a href="https://www.linkedin.com">Linkedin</a></li>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
                         <li><a href="https://www.x.com">Twitter</a></li>
                         <li><a href="https://www.youtube.com">Youtube</a></li>
                     </ul>
                 </div>
                 &copy; Copyright 2024 Iot LAB CSE
             </div>
-
         </footer>
+        <script src="scripts/process.js"></script>
     </body>
 </html>
