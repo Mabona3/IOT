@@ -2,7 +2,7 @@ body {
     font-family: "Lato", sans-serif;
     color: black;
     margin: 0;
-    background: linear-gradient(to bottom, #0d6efd, #5ce1e6, #f8f9fa, #ffc107, #ff7f50);
+    background: linear-gradient(to bottom, #fd6efd, #fc81e6, #f809fa, #00f197, #ff7050);
     /* setting gardiant colors for background  */
     background-attachment: fixed;
 }
