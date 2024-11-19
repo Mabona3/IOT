@@ -51,8 +51,8 @@ some of the applications are:
 - Agriculture  
 
 ## Team
-[alaa atwa](https://github.com/Alaa-Atwa)  
-[mazen khaled](https://github.com/Mabona3)  
+[Alaa Atwa](https://github.com/Alaa-Atwa)  
+[Mazen Khaled](https://github.com/Mabona3)  
 
 ##### NOTE:
 
