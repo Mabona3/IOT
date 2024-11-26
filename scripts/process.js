@@ -1,6 +1,6 @@
 const authen = document.getElementById('Authenticated')
-const auth_button = document.getElementById('button_control_iot') 
-const auth_div = document.getElementById('div_control_iot') 
+const auth_button = document.getElementById('button_control_iot')
+const auth_div = document.getElementById('div_control_iot')
 const hint = document.getElementById("Hint")
 let tries = 0
 const arrayGuesses = new Array(6)
@@ -24,25 +24,35 @@ const unAuthenticated = function () {
   authen.appendChild(document.createTextNode(choices))
 }
 
+// <button id= "SysOn">
+// on click parentNode.submit -> parent.action = Child.getId()
+
+function submitForm(event) {
+  event.preventDefault()
+  const trig = event.target
+  trig.parentNode.setAttribute('action', trig.id)
+  trig.parentNode.submit
+
+}
+
 const Authenticated = function () {
   auth_div.parentNode.removeChild(auth_div)
   hint.parentNode.removeChild(hint)
 
-  On = document.createElement("button")
-  Off = document.createElement("button")
-
-  On.setAttribute("id", "On_button")
-  Off.setAttribute("id", "Off_button")
-
+  On = document.createElement("button").setAttribute("id", "SysOn")
+  Off = document.createElement("button").setAttribute("id", "SysOff")
   On.textContent = "On"
   Off.textContent = "Off"
+  On.onClick = submitForm
+  Off.onClick = submitForm
 
   const img = document.createElement('img')
   img.src = "./images/Liquid-level-monitoring.png"
   img.width = 500
-  img.height= 500
+  img.height = 500
 
   const form = document.createElement("form")
+  form.setAttribute('method', 'POST')
   form.appendChild(On)
   form.appendChild(Off)
 
@@ -59,30 +69,30 @@ const guessNumber = function (event) {
   num = parseInt(value)
 
   value.value = ""
-
+  console.log(ranNum)
   if (num == ranNum) {
     Authenticated()
   } else {
-    arrayGuesses[tries++] = num  
+    arrayGuesses[tries++] = num
     if (tries == 6) {
       unAuthenticated()
     } else if (num > ranNum) {
       if (tries != 1) {
         hint.removeChild(hint.firstChild)
       }
-        hint.appendChild(document.createTextNode("Too High"))
-      
+      hint.appendChild(document.createTextNode("Too High"))
+
     } else {
       if (tries != 1) {
         hint.removeChild(hint.firstChild)
-      } 
+      }
       hint.appendChild(document.createTextNode("Too Low"))
-      
+
     }
   }
 }
 
-auth_button.addEventListener("click" , function (event) {
+auth_button.addEventListener("click", function (event) {
 
   auth_button.setAttribute("disabled", false)
 
