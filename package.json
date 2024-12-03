@@ -2,7 +2,9 @@
   "type": "module",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.21.1",
     "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
     "tether": "^1.4.7"
   }
 }
