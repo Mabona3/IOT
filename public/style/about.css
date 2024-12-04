@@ -1,8 +1,23 @@
 .Our-team {
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .heading {
     padding: 10px;
+}
+
+.card {
+  background: transparent;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-img-top {
+  margin: 0 auto;
 }
