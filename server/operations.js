@@ -1,4 +1,4 @@
-const assert = require('../public/node_modules/assert')
+const assert = require('assert')
 
 exports.insertDocument = (db, document, collection, callback) => {
   const coll = db.collection(collection)
