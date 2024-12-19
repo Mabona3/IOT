@@ -1,35 +1,35 @@
-// Requiring the Library
+// requiring the library
 const mraa = require('mraa');
 
-console.log("Mazen and Atwa's Team with mraa: ", mraa.getVersion());
+console.log("mazen and atwa's team with mraa: ", mraa.getversion());
 
-const HIGH = 1;
-const LOW = 0;
-const level_sensor = new mraa.Aio(0);
-const motor = new mraa.Pwm(3);
-const led2 = new mraa.Gpio(6);
-const led3 = new mraa.Gpio(9);
+const high = 1;
+const low = 0;
+const level_sensor = new mraa.aio(0);
+const motor = new mraa.pwm(3);
+const led2 = new mraa.gpio(6);
+const led3 = new mraa.gpio(9);
 
-led2.dir(mraa.DIR_OUT);
-led3.dir(mraa.DIR_OUT);
+led2.dir(mraa.dir_out);
+led3.dir(mraa.dir_out);
 
-led2.write(LOW);
-led3.write(LOW);
+led2.write(low);
+led3.write(low);
 
 motor.enable(true);
 motor.period_us(2000);
 
-motor.write(HIGH);
+motor.write(high);
 
-function writeMotor() {
+function writemotor() {
   const level = level_sensor.read();
   console.log(level);
 
   if (level > 900) {
-    motor.write(LOW);
+    motor.write(low);
   } else {
-    motor.write(LOW);
+    motor.write(low);
   }
 }
 
-setInterval(writeMotor, 1000);
+setinterval(writemotor, 1000);
